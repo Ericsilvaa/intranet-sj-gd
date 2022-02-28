@@ -111,12 +111,12 @@ a {
 }
 
 .tab-menu-principal::after {
-    content: url(/img/icons/seta-baixo.svg);
+    content: '⇩';
     display: inline-block;
 }
 
 .tab-menu-principal.ativo::after{
-    content: url(/img/icons/seta-cima.svg);
+    content: '⇧';
     display: inline-block;
 }
 
