@@ -43,6 +43,13 @@ a {
   max-width: 200px;
 }
 
+.img-processos{
+  margin-top: 1px;
+  margin-left: 1px;
+
+  width: 1450px;
+}
+
 .grid-principal {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -64,20 +71,18 @@ a {
 .nomes-processos {
   padding: 70.7px 10px;
   font-size: 0.675rem;
-  border-top: 1px solid #c7c7c7;
+  border-top: 1.5px solid #c7c7c7;
   cursor: pointer;
 }
 
-.nomes-processos:nth-child(1) {
-  border-top: none;
-}
+
 
 .nomes-processos:hover {
   box-shadow: 2px 0px 2px #4f80bd;
 }
 
 .nomes-processos.ativo {
-  box-shadow: 2.5px 0px 2px #77a9e6;
+  box-shadow: 2.5px 0px 1px #77a9e6;
 }
 
 /* animação js */
