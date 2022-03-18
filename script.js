@@ -1,19 +1,22 @@
-//     function initActive(){
-//     const listaAtiva = document.querySelectorAll('.activeLine div')
+function initActive(){
+    const listaAtiva = document.querySelectorAll('.activeLine div')
 
-//         function activeLine(index) {
-            
-//             listaAtiva.forEach((div) => {
-//                 div.classList.remove('ativo')
-//             })
-//         listaAtiva[index].classList.add('ativo')
-//         }
+    function activeLine(index) {
+        
+        listaAtiva.forEach((div) => {
+            div.classList.remove('ativo')
+        })
+    listaAtiva[index].classList.add('ativo')
+    }
 
-//         listaAtiva.forEach((itemLine, index) => {
-//         itemLine.addEventListener('click', () => {
-//         activeL(index)
-// }
-// initActive();
+    listaAtiva.forEach((itemLine, index) => {
+        itemLine.addEventListener('click', () => {
+        activeLine(index)
+        })
+    })
+
+}
+initActive();
 
 
 function initActiveBar() {
@@ -33,26 +36,5 @@ function initActiveBar() {
 })
 })
 
-}initActiveBar()
-    
-//     if (tabMenu.length && tabContent.length) {
-//         tabContent[0].classList.add('ativo') //adicionei a classe no 1° item
-    
-//         function activeBar(index) {
-//             tabContent.forEach((div) => {
-//                 div.classList.remove('ativo')
-//             })
-//             tabContent[index].classList.add('ativo')
-//         }
-    
-//         tabMenu.forEach((itemMenu, index) => {
-//             itemMenu.addEventListener('click', () => {
-//                 activeBar(index)
-//             })
-//         })
-
-        
-//     }
-// }
-// initActiveBar();
-
+}
+initActiveBar()
