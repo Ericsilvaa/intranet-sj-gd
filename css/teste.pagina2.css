@@ -22,33 +22,42 @@ body {
 a {
   text-decoration: none;
   display: block;
-  color: white;
+  color: #333;
 }
 
 /* HEADER */
 
 .header {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 320px 1fr;
   align-items: center;
   background-color: white;
   text-align: center;
   box-shadow: 0px 0px 7px #c7c7c7;
-  height: 13.5vh;
+  padding: 15px 5px;
 }
 
-
-.img-janga{
-  margin-left: 15px;
-  max-width: 200px;
+ 
+.nome-gd{
+  text-align: left;
+  margin-left: 5px;
 }
 
+.nome-gd a {
+  color: #4F80BD;
+  font-weight: 700;
+}
+
+.nome-gd a:hover {
+  opacity: 0.8;
+}
+
+/* 
 .img-processos{
   margin-top: 1px;
   margin-left: 1px;
-
   width: 1450px;
-}
+} */
 
 .grid-principal {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -56,33 +65,50 @@ a {
 
 .article {
   display: grid;
-  grid-template-columns: 145px 1fr;
+  grid-template-columns: 145px 1fr; 
 }
 
 .fundo-processos {
   background: #ffffff;
-  width: 9vw;
-  height: 86.2vh;
   display: flex;
+  width: 190px;
+  height: 90vh;
   flex-direction: column;
   box-shadow: 0px 5px 6px #c7c7c7;
-}
+  z-index: 1;
+} 
+
 
 .nomes-processos {
-  padding: 70.7px 10px;
-  font-size: 0.675rem;
-  border-top: 1.5px solid #c7c7c7;
+  padding: 10px;
+  font-size: 0.775rem;
+  color: #5F6368;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.fundo-nomes:hover {
+  background-color: #f2f7fc;
+  box-shadow:  -10px 0px 0px #f2f7fc;
   cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
 }
 
-
-
-.nomes-processos:hover {
-  box-shadow: 2px 0px 2px #4f80bd;
+.fundo-nomes.ativo {
+  background-color: #e8f0fe;
+  color: #4F80BD;
+  box-shadow:  -10px 0px 0px #E8F0FE;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.nomes-processos.ativo {
-  box-shadow: 2.5px 0px 1px #77a9e6;
+.fundo-nomes {
+  padding: 6px 0px;
 }
 
 /* animação js */
@@ -93,15 +119,13 @@ a {
 
 .tabContent section.ativo {
   display: block !important;
-  animation: show 0.8s forwards;
-  display: grid;
-  display: repeat (5, 1fr);
+  animation: show 0.9s forwards;
 }
 
 @keyframes show {
   from {
     opacity: 0;
-    transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
   }
   to {
     opacity: 1;
@@ -111,10 +135,10 @@ a {
 
 .area-pdf {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
   padding: 10px;
-  margin-left: 6px;
+  margin-left: 45px;
   background: #e4e4e4;
   font-size: 0.875rem;
   font-family: monospace;

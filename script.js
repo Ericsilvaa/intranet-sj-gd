@@ -1,5 +1,5 @@
 function initActive(){
-    const listaAtiva = document.querySelectorAll('.activeLine div')
+    const listaAtiva = document.querySelectorAll('.fundo-nomes')
 
     function activeLine(index) {
         
@@ -21,7 +21,7 @@ initActive();
 
 function initActiveBar() {
     
-    const tabMenu = document.querySelectorAll('.tabMenu div')
+    const tabMenu = document.querySelectorAll('.fundo-nomes')
     const tabContent = document.querySelectorAll('.tabContent section')
     
     function activeBar(index) {
