@@ -1,0 +1,98 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.corpoPagePrincial{
+    background: #d31212;
+    -webkit-font-smoothing: antialiased;
+    font-family:Georgia, 'Times New Roman', Times, serif ; 
+
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+
+/* DIVISÃO PRINCIPAL */
+.grid-article-processos {
+    max-width: 1260px;
+    padding: 0px 20px;
+    margin: 150px auto;
+}
+
+.lista-geral {
+    border: solid 2px #BFBFBF;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+
+
+/* NOMES PEQUENOS ACIMA DO CONTAINER "EXPOENTE" */
+.nome-expoente::before{
+    font-size: .825rem;
+    font-weight: 500;
+    font-family:monospace; 
+    background: #fff;
+    color: #060606;
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    padding: 0px 5px;
+}
+
+.expoente-estrategicos::before{
+    content: 'Processos Estratégicos';
+}
+
+.expoente-fins::before{
+    content: 'Processos Fins';
+}
+
+.expoente-suporte::before{
+    content: 'Processos de Suporte';
+}
+
+
+
+
+/* Fundo */
+.fundo-intranet{
+    background: blue;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;   
+    height: 470px;
+}
+
+.fundo-intranet h1 {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+
+
+/* F O O T E R */
+.copy {
+    background: #4F80BD;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

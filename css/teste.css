@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    background: #eeeded;
+    -webkit-font-smoothing: antialiased;
+    font-family:Georgia, 'Times New Roman', Times, serif ; 
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.pagina-inicial {
+    margin: 3vh 10px;
+}
+
+.pagina-inicial a {
+    color: #333;
+    background: linear-gradient(#77a9e6 ,#5da0f2) no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+    transition:  background-size 500ms;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.pagina-inicial a:hover{ 
+    background-size: 100% 100%;
+    background-position-x:left ;
+}
+
+
+/* ................. */
+
+.fundo-2 {
+    background: #fff;
+    width: 500px;
+    height: 650px;
+    margin: 0vh auto;
+    border-radius: 6px;
+    box-shadow: 1px 2px 10px rgba(16, 15, 15, 0.344);
+}
+/* ............................. */
+
+.cabecalho {
+    text-align: center;
+}
+.cabecalho h1 {
+    font-size: 1.075rem;
+    padding-top: 25px;
+}
+
+.cabecalho p {
+    font-size: 0.675rem;
+    padding-top: 6px;
+    color: #ccc8c8dc;
+    margin-bottom: 20px;
+}
+
+/* ............................. */
+
+
+
+.lista-gestao {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 460px;
+    margin: 0 auto;
+
+}
+
+
+
+/* ............................... */
+
+
+.tab-menu-principal {
+    background: #f6f6f6;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+
+.tab-menu-pdf {
+    display: none;
+}
+
+.tab-menu-principal::after {
+    content: '⇩';
+    display: inline-block;
+}
+
+.tab-menu-principal.ativo::after{
+    content: '⇧';
+    display: inline-block;
+}
+
+.tab-menu-pdf.ativo  {
+    display: block !important;
+    padding: 0px 15px;
+    animation: slidown 0.8s forwards;
+}
+
+@keyframes slidown {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-20px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+.botao-send {
+display: flex;
+align-items: center;
+gap: 10px;
+font-family: monospace;
+font-size: 18px;
+font-weight: bolder;
+padding: 10px 30px;
+margin-top: 30px;
+margin-left: 180px;
+margin-right: 200px;
+border-radius: 5px;
+cursor: pointer;
+border: none;
+box-shadow: 0px 0px 3px #333;
+}
+
+.botao-send:hover {
+    box-shadow: 0px 0px 6px #333;
+    transition: 0.3s;
+}
+
+.list-send {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: monospace;
+    font-weight: 500;
+    gap: 10px;
+    margin: 15px 10px;
+}
+
+.list-send div {
+    flex: 1;
+    padding: 10px 10px;
+    background: #ebe1e1;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+
+.list-send div.ativo {
+    display: block;
+}
+
+.list-send div:hover {
+    box-shadow: 0px 2px 2px #77a9e6;
+}
+
+/* ANIMATION C JS */
+
+
+/* ...................... */
+/* 
+.ball-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    font-size: 2.5rem;
+    box-shadow: 1px 2px 12px rgba(16, 15, 15, 0.344);
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    right: 150px;
+    bottom: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+/* .................................... */
+/* 
+@media (max-width: 600px) {
+    .ball-nav {
+        right: 225px;
+        bottom: 40px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARA GUARDAR */
+/* 
+.tab-menu-fundo-animation {
+    background: linear-gradient(#f6f6f6, rgb(225, 225, 237)) no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+    transition:  background-size 500ms;
+}
+
+.tab-menu-fundo-animation:hover{ 
+    background-size: 100% 100%;
+    background-position-x:left ;
+}
+ */

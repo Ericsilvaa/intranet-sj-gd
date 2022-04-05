@@ -1,0 +1,36 @@
+.header {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 7px #c7c7c7;
+    padding: 15px 5px;
+
+}
+
+
+.nome-gd{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.nome-gd a {
+    color: #4F80BD;
+    font-weight: 700;
+
+}
+
+.nome-gd a:hover {
+    opacity: 0.8;
+}
+
+/* titulo */
+.grid-principal {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo-documentos h1 {
+    margin-right: 150px ;
+ color: #4F80BD;
+}

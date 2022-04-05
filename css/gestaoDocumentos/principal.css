@@ -1,0 +1,78 @@
+.article {
+    display: grid;
+    grid-template-columns: 190px 1fr; 
+    height: 90vh;
+}
+
+.fundo-processos {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 6px #c7c7c7;
+    z-index: 1;
+    border-top: 1px solid #ececec;
+} 
+
+
+.nomes-processos {
+    padding: 2px 10px 2px 20px;
+    font-size: 0.795rem;
+    color: #5F6368;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.fundo-nomes:hover {
+    background-color: #f2f7fc;
+    box-shadow:  -20px 0px 0px #f2f7fc;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.fundo-nomes.ativo {
+    background-color: #e8f0fe;
+    color: #4F80BD;
+    box-shadow:  -20px 0px 0px #E8F0FE;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fundo-nomes {
+    padding: 6px 0px;
+}
+
+/* animação js */
+
+.tabContent section {
+    display: none;
+}
+
+.tabContent section.ativo {
+    display: block !important;
+    animation: show 0.9s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.area-pdf {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+    font-size: 0.875rem;
+    font-family: monospace;
+}

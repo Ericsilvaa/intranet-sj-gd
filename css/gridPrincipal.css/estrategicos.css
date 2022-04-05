@@ -1,0 +1,15 @@
+.lista-estrategicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 25px;
+    gap: 20px;
+}
+
+.lista-estrategicos-fundo {
+    background-color: #1F497D;
+    padding: 20px 30px ;
+    border-radius: 6px;
+
+}

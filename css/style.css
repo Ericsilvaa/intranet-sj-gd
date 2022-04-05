@@ -1,0 +1,15 @@
+/* GRID PRINCIPAL */
+@import "./gridPrincipal.css/globalPrincipal.css";
+@import "./gridPrincipal.css/estrategicos.css";
+@import "./gridPrincipal.css/fins.css";
+@import "./gridPrincipal.css/suporte.css";
+
+
+
+/* GESTÃO DE DOCUMENTOS */
+@import "./gestaoDocumentos/global.css";
+@import "./gestaoDocumentos/header.css";
+@import "./gestaoDocumentos/principal.css";
+
+
+
