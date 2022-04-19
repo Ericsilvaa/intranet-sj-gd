@@ -10,3 +10,80 @@
 @import "./gestaoDocumentos/global.css";
 @import "./gestaoDocumentos/header.css";
 @import "./gestaoDocumentos/principal.css";
+
+
+/* PAGINA LOGIN */
+
+/* BOTÃO DE UPDATE */
+#central span {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14px;
+    transition: all .4s ease-in-out;
+
+}
+
+#central {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    background-color: #1F497D;
+    margin-left: 580px;
+    margin-top: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1.175rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.login:hover {
+    
+}
+
+/* itens */
+
+.link {
+    position: absolute; 
+    margin-left: 600px;
+    margin-top: -35px;
+    border-radius: 5px;
+    transition: all .1s ease-out;
+    cursor: pointer;
+    background-color: #1F497D;
+    padding: 3px 6px;
+}
+
+
+.link-03{
+    margin-left: 592px;
+}
+
+#check {
+    display: none;
+    cursor: pointer;
+}
+
+#check:checked ~ div #rotation-1 {
+    transform: translateY(-55px);
+}
+#check:checked ~ div #rotation-2 {
+    transform: translateX(123px);
+    transition-delay: .2s;
+}
+#check:checked ~ div #rotation-3 {
+    transform: translateY(50px);
+    transition-delay: .3s;
+}
+#check:checked ~ div #rotation-4 {
+    transform: translateX(-110px);
+    transition-delay: .5s;
+}
+
+/* https://www.youtube.com/watch?v=gLzQnDZjZos */
